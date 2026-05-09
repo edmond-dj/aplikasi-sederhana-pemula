@@ -6,19 +6,17 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
 .container {
+  max-width: 800px;
+  margin: 0 auto;
   background: white;
-  padding: 30px;
   border-radius: 16px;
-  width: 90%;
-  max-width: 500px;
+  padding: 25px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
@@ -28,68 +26,69 @@ h1 {
   color: #333;
 }
 
-.input-area {
-  display: flex;
-  gap: 10px;
+.date-picker {
   margin-bottom: 20px;
+  text-align: center;
 }
 
-#taskInput {
-  flex: 1;
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-#addBtn {
-  padding: 12px 20px;
-  background: #667eea;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.date-picker label {
+  margin-right: 10px;
   font-weight: bold;
 }
 
-#addBtn:hover {
-  background: #5a6fd8;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  padding: 12px;
-  background: #f8f9fa;
-  margin-bottom: 8px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s;
-}
-
-li.completed {
-  opacity: 0.7;
-  text-decoration: line-through;
-  background: #e0e0e0;
-}
-
-.delete-btn {
-  margin-left: auto;
-  background: #ff4757;
+#addStudentBtn {
+  padding: 10px 15px;
+  background: #28a745;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-.footer {
-  text-align: center;
+.student-list {
   margin-top: 20px;
-  color: #666;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.student-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.status-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   font-size: 14px;
+  min-width: 80px;
+}
+
+.hadir { background: #28a745; color: white; }
+.sakit { background: #ffc107; color: black; }
+.izin { background: #17a2b8; color: white; }
+.alfa { background: #dc3545; color: white; }
+
+.summary {
+  margin-top: 30px;
+  padding: 15px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.delete-btn {
+  color: #dc3545;
+  cursor: pointer;
+  margin-left: 10px;
 }
